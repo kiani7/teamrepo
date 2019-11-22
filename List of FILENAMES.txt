@@ -1,0 +1,139 @@
+List of FILENAMES
+
+styles.css 					DONE
+login.html					DONE
+login.php					DONE
+logout.php					DONE
+menu.html  					DONE
+
+		registers.html 		DONE
+		registers.php		DONE
+		views.php 			DONE	
+		views2.php			DONE
+		createcw.html		DONE
+		createcw.php		DONE
+   
+	editcw.php 		
+	editcw2.php
+	viewcw.php		
+	viewcw2.php
+	addmarks.php 	
+	addmarks2.php
+   
+	disavg.php 				Calculate and Display (Not stored)
+	disfan.php 				Calculate and Display (Not stored)
+
+gadb.sql					DONE	(CREATES & INSERTS)
+// CREATES.SQL	INSERTS.SQL		
+
+ninelut.sql					DONE
+
+CW EDITED.DOCX				Product backlog, Sprint 1
+
+GITHUB
+
+SCRUM VIDEOS
+
+PAIR PROGRAMMING VIDEOS
+
+login.html
+login.php
+logout.php
+menu.html
+
+Features
+
+Register Student 
+    should allow the member of staff to register a student on the programme in order to allow student submissions.
+
+View Students 
+    should allow a member of staff to view all coursework submissions for a particular student.
+
+View Coursework 
+    should allow a member of staff to view all student marks for a particular coursework.
+
+Create Coursework 
+    should provide users with the functionality to add a new coursework.
+
+Edit Coursework 
+    should allow the user to amend the details of any coursework.
+
+Add Marks 
+    should allow the user to enter marks for a student’s coursework
+
+Display Average 
+    should allow the member of staff to calculate and display the current average for the student as a percentage.
+
+Display Final Alphanumeric Grade 
+    should provide the final grade for the student in the alphanumeric scale
+******************************************************************************************************************
+******************************************************************************************************************
+
+Register Student 
+    should allow the member of staff to register a student on the programme in order to allow student submissions.
+    
+    html form enter details First Name and Last Name
+    js validate
+    php sql INSERT INTO students
+    return to menu.html
+    
+******************************************************************************************************************
+View Students 
+    should allow a member of staff to view all coursework submissions for a particular student.
+    
+    php SELECT * FROM students
+    html inside php use form to call views2 POST sid Enter Student ID
+    php SELECT * FROM x WHERE sid=$sid
+    return to menu.html
+    
+******************************************************************************************************************
+View Coursework 
+    should allow a member of staff to view all student marks for a particular coursework.
+    
+    php SELECT * FROM courseworks
+    html inside php use form to call viewcw2 POST cwid Enter Coursework ID
+    php SELECT * FROM x WHERE cwid=$cwid
+    return to menu.html    
+    
+******************************************************************************************************************
+Create Coursework 
+    should provide users with the functionality to add a new coursework.
+    
+    html form enter details Title, Module ID, HiDate, FDD, Status
+    js validate
+    php sql INSERT INTO courseworks
+    return to menu.html
+    
+******************************************************************************************************************
+Edit Coursework 
+    should allow the user to amend the details of any coursework.
+    
+    php SELECT * FROM courseworks
+    
+******************************************************************************************************************
+Add Marks 
+    should allow the user to enter marks for a student’s coursework.
+    
+    
+******************************************************************************************************************
+Display Average 
+    should allow the member of staff to calculate and display the current average for the student as a percentage.
+    
+    php SELECT * FROM students
+    html inside php use form to call davg2.php POST sid Enter Student ID
+    php SELECT * FROM x WHERE sid=$sid
+    while
+       add to rt count++
+       avg=rt/count
+       echo count
+    return to menu.html    
+    
+******************************************************************************************************************
+Display Final Alphanumeric Grade 
+    should provide the final grade for the student in the alphanumeric scale.
+    
+    see previous feature
+    ninelut.sql
+    echo fan
+    return to menu.html 
+    
